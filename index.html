@@ -239,7 +239,79 @@
 
       flex-wrap: wrap;
     }
+/* VIDEO BANNER */
 
+.video-banner {
+  width: 100%;
+  background: #000;
+  padding-top: 60px;
+  overflow: hidden;
+}
+
+.banner-video {
+  width: 100%;
+  height: 520px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* EVENT TITLE BELOW VIDEO */
+
+.title-section {
+  background:
+    radial-gradient(
+      circle at center,
+      #35111f 0%,
+      #111522 60%,
+      #080b12 100%
+    );
+
+  color: white;
+  text-align: center;
+
+  padding: 55px 7% 65px;
+}
+
+.title-logo {
+  width: 150px;
+  height: auto;
+  display: block;
+
+  margin: 0 auto 25px;
+
+  border-radius: 50%;
+}
+
+.event-title {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-weight: 500;
+
+  line-height: .9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  margin: 0;
+}
+
+.event-title span {
+  display: block;
+
+  font-family: "Italianno", cursive;
+
+  font-size: .78em;
+  font-weight: 400;
+
+  text-transform: none;
+  letter-spacing: 0;
+
+  color: #dfbd72;
+
+  margin-top: 15px;
+}
     /* BUTTONS */
 
     .button {
@@ -680,7 +752,25 @@
     /* MOBILE */
 
     @media (max-width: 800px) {
+.video-banner {
+  padding-top: 55px;
+}
 
+.banner-video {
+  height: 330px;
+}
+
+.title-section {
+  padding: 40px 6% 50px;
+}
+
+.title-logo {
+  width: 120px;
+}
+
+.event-title {
+  font-size: clamp(2.8rem, 13vw, 4.5rem);
+}
       .navbar {
         padding: 12px 5%;
       }
@@ -863,10 +953,12 @@
   </nav>
 
 
-  <header class="hero" id="home">
+<header id="home">
+
+  <div class="video-banner">
 
     <video
-      class="hero-video"
+      class="banner-video"
       autoplay
       muted
       loop
@@ -879,52 +971,52 @@
 
     </video>
 
-    <div class="hero-overlay"></div>
+  </div>
 
-    <div class="hero-content">
 
-      <img
-        src="prom-logo.jpeg"
-        alt="South Texas Homeschool Prom and Formal logo"
-        class="hero-logo">
+  <div class="title-section">
 
-      <div class="hero-eyebrow">
-        South Texas Homeschool Prom & Formal Presents
-      </div>
+    <img
+      src="prom-logo.jpeg"
+      alt="South Texas Homeschool Prom and Formal logo"
+      class="title-logo">
 
-      <h1>
-        The Midnight
-        <span>Carnival of Masques</span>
-      </h1>
+    <div class="hero-eyebrow">
+      South Texas Homeschool Prom & Formal Presents
+    </div>
 
-      <p class="hero-tagline">
-        At midnight, every mask tells a story.
-      </p>
+    <h1 class="event-title">
+      The Midnight
+      <span>Carnival of Masques</span>
+    </h1>
 
-      <div class="ornament">
-        ✦ ◆ ✦
-      </div>
+    <p class="hero-tagline">
+      At midnight, every mask tells a story.
+    </p>
 
-      <p class="hero-date">
-        2027 • Date & Location To Be Announced
-      </p>
+    <div class="ornament">
+      ✦ ◆ ✦
+    </div>
 
-      <div class="hero-buttons">
+    <p class="hero-date">
+      2027 • Date & Location To Be Announced
+    </p>
 
-        <a href="#event" class="button button-gold">
-          Enter the Carnival
-        </a>
+    <div class="hero-buttons">
 
-        <a href="#about" class="button button-clear">
-          About Us
-        </a>
+      <a href="#event" class="button button-gold">
+        Enter the Carnival
+      </a>
 
-      </div>
+      <a href="#about" class="button button-clear">
+        About Us
+      </a>
 
     </div>
 
-  </header>
+  </div>
 
+</header>
 
   <section class="event-section" id="event">
 
