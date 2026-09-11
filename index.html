@@ -250,10 +250,12 @@
 
 .banner-video {
   width: 100%;
-  height: 520px;
+  height: auto;
+  max-height: 520px;
   display: block;
-  object-fit: cover;
-  object-position: center;
+  object-fit: contain;
+  background: #080b12;
+}
 }
 
 
@@ -754,10 +756,6 @@
     @media (max-width: 800px) {
 .video-banner {
   padding-top: 55px;
-}
-
-.banner-video {
-  height: 330px;
 }
 
 .title-section {
