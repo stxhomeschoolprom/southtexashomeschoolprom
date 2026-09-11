@@ -242,19 +242,19 @@
 /* VIDEO BANNER */
 
 .video-banner {
-  width: 100%;
-  background: #000;
+  background: #080b12;
   padding-top: 60px;
-  overflow: hidden;
+  text-align: center;
 }
 
 .banner-video {
-  width: 100%;
-  height: auto;
-  max-height: 520px;
+  width: auto;
+  height: 70vh;
+  max-height: 720px;
+  max-width: 100%;
   display: block;
+  margin: 0 auto;
   object-fit: contain;
-  background: #080b12;
 }
 }
 
@@ -754,8 +754,10 @@
     /* MOBILE */
 
     @media (max-width: 800px) {
-.video-banner {
-  padding-top: 55px;
+.banner-video {
+  width: 100%;
+  height: auto;
+  max-height: none;
 }
 
 .title-section {
