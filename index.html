@@ -3,10 +3,1360 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>South Texas Homeschool Prom & Formal</title>
+
+  <meta name="description" content="South Texas Homeschool Prom & Formal is a nonprofit creating welcoming and memorable formal experiences for homeschool students.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Italianno&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    :root {
+      --burgundy: #4b0d23;
+      --wine: #68172d;
+      --midnight: #0b1524;
+      --navy: #111d31;
+      --gold: #b7934f;
+      --cream: #f4ecdf;
+      --ivory: #fbf7ef;
+      --black: #090909;
+      --soft-black: #161313;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--ivory);
+      color: var(--soft-black);
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    img,
+    video {
+      max-width: 100%;
+    }
+
+    /* NAVIGATION */
+
+    .navbar {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 12px 6%;
+
+      background: rgba(8, 12, 20, .94);
+      border-bottom: 1px solid rgba(183, 147, 79, .45);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-brand {
+      font-family: "Cormorant Garamond", serif;
+      color: var(--cream);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: .85rem;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--cream);
+      text-decoration: none;
+      font-size: .74rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      transition: .25s;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .menu-button {
+      display: none;
+      border: 0;
+      background: transparent;
+      color: white;
+      font-size: 1.7rem;
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 100vh;
+      min-height: 100svh;
+
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      overflow: hidden;
+      background: var(--midnight);
+    }
+
+    .hero-video {
+      position: absolute;
+      inset: 0;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(0,0,0,.26),
+          rgba(28,8,17,.53),
+          rgba(7,11,19,.90)
+        );
+    }
+
+    .hero-content {
+      width: min(920px, 90%);
+      position: relative;
+      z-index: 5;
+
+      text-align: center;
+      color: white;
+
+      padding: 95px 0 55px;
+    }
+
+    .hero-logo {
+      width: 240px;
+      max-width: 52vw;
+      height: auto;
+
+      display: block;
+      margin: 0 auto 28px;
+
+      border-radius: 50%;
+      box-shadow: 0 12px 50px rgba(0,0,0,.45);
+    }
+
+    .hero-eyebrow {
+      color: #e1c88f;
+
+      font-size: .78rem;
+      font-weight: 500;
+
+      text-transform: uppercase;
+      letter-spacing: 4px;
+
+      margin-bottom: 14px;
+    }
+
+    .hero h1 {
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      font-weight: 500;
+
+      line-height: .92;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .hero h1 span {
+      display: block;
+
+      font-family: "Italianno", cursive;
+
+      font-size: .78em;
+      font-weight: 400;
+
+      text-transform: none;
+      letter-spacing: 0;
+
+      color: #dfbd72;
+
+      margin-top: 14px;
+    }
+
+    .hero-tagline {
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(1.3rem, 3vw, 1.85rem);
+      font-style: italic;
+
+      color: var(--cream);
+
+      margin: 24px auto 10px;
+    }
+
+    .hero-date {
+      color: #e3d5bd;
+
+      font-size: .82rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+
+      margin-top: 20px;
+    }
+
+    .hero-buttons {
+      margin-top: 31px;
+
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+
+      flex-wrap: wrap;
+    }
+
+    /* BUTTONS */
+
+    .button {
+      display: inline-block;
+
+      padding: 12px 25px;
+
+      text-decoration: none;
+      text-transform: uppercase;
+
+      letter-spacing: 2px;
+      font-size: .74rem;
+      font-weight: 500;
+
+      border: 1px solid var(--gold);
+
+      transition: .25s;
+    }
+
+    .button-gold {
+      color: #111;
+      background: var(--gold);
+    }
+
+    .button-gold:hover {
+      background: #d1b16e;
+    }
+
+    .button-clear {
+      color: white;
+      background: rgba(0,0,0,.14);
+    }
+
+    .button-clear:hover {
+      background: rgba(183,147,79,.18);
+    }
+
+    /* GENERAL SECTIONS */
+
+    section {
+      padding: 90px 7%;
+    }
+
+    .section-inner {
+      width: min(1120px, 100%);
+      margin: auto;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-heading .small {
+      color: var(--wine);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: .73rem;
+      font-weight: 600;
+    }
+
+    .section-heading h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.6rem, 6vw, 4rem);
+      font-weight: 500;
+      line-height: 1;
+      margin-top: 7px;
+    }
+
+    .ornament {
+      text-align: center;
+      color: var(--gold);
+      letter-spacing: 9px;
+      font-size: 1.1rem;
+      margin: 14px 0 25px;
+    }
+
+    /* EVENT */
+
+    .event-section {
+      background:
+        radial-gradient(
+          circle at top left,
+          rgba(183,147,79,.11),
+          transparent 35%
+        ),
+        var(--cream);
+    }
+
+    .event-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .event-art {
+      position: relative;
+    }
+
+    .event-art::before {
+      content: "";
+
+      position: absolute;
+      inset: -13px;
+
+      border: 1px solid var(--gold);
+
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .event-art img {
+      width: 100%;
+      display: block;
+
+      position: relative;
+      z-index: 2;
+
+      box-shadow: 0 22px 50px rgba(43,20,18,.19);
+    }
+
+    .event-copy h3 {
+      font-family: "Cormorant Garamond", serif;
+      color: var(--burgundy);
+
+      font-size: clamp(2.7rem, 5vw, 4rem);
+      font-weight: 500;
+      line-height: .95;
+
+      margin-bottom: 24px;
+    }
+
+    .event-copy .tagline {
+      font-family: "Cormorant Garamond", serif;
+
+      color: var(--gold);
+
+      font-size: 1.5rem;
+      font-style: italic;
+
+      margin-bottom: 22px;
+    }
+
+    .event-copy p {
+      margin-bottom: 17px;
+    }
+
+    .event-details {
+      margin: 30px 0;
+
+      border-top: 1px solid rgba(142,113,58,.4);
+      border-bottom: 1px solid rgba(142,113,58,.4);
+
+      padding: 22px 0;
+    }
+
+    .detail {
+      display: grid;
+      grid-template-columns: 115px 1fr;
+      gap: 15px;
+      padding: 6px 0;
+    }
+
+    .detail strong {
+      color: var(--burgundy);
+
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      font-size: .73rem;
+    }
+
+    /* MISSION */
+
+    .mission {
+      background:
+        radial-gradient(
+          circle at center,
+          #24131f 0%,
+          #0a101b 68%
+        );
+
+      color: var(--cream);
+      text-align: center;
+    }
+
+    .mission .small {
+      color: #d8b56c;
+    }
+
+    .mission blockquote {
+      width: min(900px,100%);
+      margin: auto;
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(1.7rem,4vw,2.6rem);
+      line-height: 1.35;
+
+      font-weight: 400;
+    }
+
+    .mission-description {
+      width: min(760px,100%);
+      margin: 0 auto;
+
+      color: #ded4c5;
+
+      font-size: .97rem;
+      line-height: 1.85;
+    }
+
+    .mission-line {
+      color: var(--gold);
+      font-size: 1.5rem;
+      margin: 25px auto;
+    }
+
+    /* ABOUT */
+
+    .about {
+      background: var(--ivory);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: start;
+    }
+
+    .about-grid h3 {
+      font-family: "Cormorant Garamond", serif;
+
+      color: var(--burgundy);
+
+      font-size: 2.3rem;
+      font-weight: 500;
+
+      margin-bottom: 17px;
+    }
+
+    .about-grid p {
+      margin-bottom: 16px;
+    }
+
+    .about-heart {
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: 1.35rem;
+      line-height: 1.55;
+
+      color: var(--wine);
+
+      border-left: 2px solid var(--gold);
+
+      padding-left: 20px;
+      margin-top: 25px;
+    }
+
+    .values {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .value-card {
+      padding: 22px;
+
+      border: 1px solid rgba(142,113,58,.35);
+      background: #fffaf2;
+    }
+
+    .value-card h4 {
+      font-family: "Cormorant Garamond", serif;
+
+      color: var(--wine);
+
+      font-size: 1.4rem;
+      font-weight: 600;
+
+      margin-bottom: 5px;
+    }
+
+    .value-card p {
+      font-size: .87rem;
+      margin: 0;
+    }
+
+    /* WAIVERS */
+
+    .waivers {
+      background: #efe5d6;
+      text-align: center;
+    }
+
+    .waiver-card {
+      width: min(720px,100%);
+      margin: auto;
+
+      padding: 42px;
+
+      background: var(--ivory);
+
+      border: 1px solid var(--gold);
+
+      box-shadow: 0 14px 40px rgba(50,30,20,.08);
+    }
+
+    .waiver-card h3 {
+      font-family: "Cormorant Garamond", serif;
+
+      color: var(--burgundy);
+
+      font-size: 2rem;
+      font-weight: 500;
+
+      margin-bottom: 12px;
+    }
+
+    .waiver-card p {
+      margin-bottom: 25px;
+    }
+
+    /* PHOTOS */
+
+    .photos {
+      background: var(--ivory);
+    }
+
+    .photo-placeholder {
+      min-height: 340px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+
+      border: 1px solid rgba(183,147,79,.5);
+
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(105,28,48,.90),
+          rgba(10,17,29,.98)
+        );
+
+      color: white;
+
+      padding: 45px;
+    }
+
+    .photo-placeholder h3 {
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: 2.7rem;
+      font-weight: 400;
+
+      margin-bottom: 10px;
+    }
+
+    .photo-placeholder p {
+      color: #ddd2c3;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      background: var(--burgundy);
+      color: var(--cream);
+      text-align: center;
+    }
+
+    .contact .section-heading .small {
+      color: #d8b56c;
+    }
+
+    .contact p {
+      width: min(650px,100%);
+      margin: 0 auto 30px;
+    }
+
+    .contact-email {
+      display: block;
+
+      color: #e7d4a9;
+
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.2rem;
+
+      margin: 25px auto 0;
+
+      text-decoration: none;
+    }
+
+    .contact-email:hover {
+      color: white;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #070a0f;
+      color: #cbbfae;
+
+      padding: 45px 7% 28px;
+
+      text-align: center;
+    }
+
+    .footer-name {
+      font-family: "Cormorant Garamond", serif;
+
+      color: white;
+      font-size: 1.5rem;
+
+      margin-bottom: 5px;
+    }
+
+    footer p {
+      font-size: .76rem;
+      letter-spacing: .5px;
+    }
+
+    footer .nonprofit {
+      color: var(--gold);
+
+      text-transform: uppercase;
+      letter-spacing: 3px;
+
+      margin: 15px 0;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      .navbar {
+        padding: 12px 5%;
+      }
+
+      .nav-brand {
+        width: 76%;
+        font-size: .68rem;
+        letter-spacing: 1.7px;
+      }
+
+      .menu-button {
+        display: block;
+      }
+
+      .nav-links {
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+        flex-direction: column;
+
+        gap: 0;
+
+        background: #090d15;
+
+        border-top: 1px solid rgba(183,147,79,.3);
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .nav-links li {
+        width: 100%;
+        text-align: center;
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 15px;
+      }
+
+      .hero {
+        min-height: 100svh;
+      }
+
+      .hero-content {
+        width: 92%;
+        padding-top: 85px;
+      }
+
+      .hero-logo {
+        width: 185px;
+        max-width: 48vw;
+        margin-bottom: 20px;
+      }
+
+      .hero-eyebrow {
+        letter-spacing: 3px;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.7rem, 13vw, 4.4rem);
+      }
+
+      .hero-tagline {
+        font-size: 1.2rem;
+      }
+
+      .hero-date {
+        font-size: .69rem;
+        letter-spacing: 2.5px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-buttons .button {
+        min-width: 210px;
+      }
+
+      section {
+        padding: 70px 6%;
+      }
+
+      .event-layout,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .event-layout {
+        gap: 48px;
+      }
+
+      .event-art {
+        width: 88%;
+        margin: auto;
+      }
+
+      .event-copy {
+        text-align: center;
+      }
+
+      .event-copy h3 {
+        font-size: 2.8rem;
+      }
+
+      .event-details {
+        text-align: left;
+      }
+
+      .detail {
+        grid-template-columns: 90px 1fr;
+      }
+
+      .values {
+        grid-template-columns: 1fr;
+      }
+
+      .waiver-card {
+        padding: 30px 22px;
+      }
+
+      .photo-placeholder {
+        min-height: 300px;
+        padding: 30px 20px;
+      }
+
+      .photo-placeholder h3 {
+        font-size: 2.2rem;
+      }
+
+    }
+
+  </style>
 </head>
 
 <body>
-  <h1>South Texas Homeschool Prom & Formal</h1>
+
+  <nav class="navbar">
+
+    <a href="#home" class="nav-brand">
+      South Texas Homeschool Prom & Formal
+    </a>
+
+    <button class="menu-button" id="menuButton" aria-label="Open navigation">
+      ☰
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+
+      <li>
+        <a href="#event">Event & Tickets</a>
+      </li>
+
+      <li>
+        <a href="#waivers">Waivers</a>
+      </li>
+
+      <li>
+        <a href="#photos">Photos</a>
+      </li>
+
+      <li>
+        <a href="#about">About</a>
+      </li>
+
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+
+  <header class="hero" id="home">
+
+    <video
+      class="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata">
+
+      <source
+        src="prom teaser-.mp4"
+        type="video/mp4">
+
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <img
+        src="prom-logo.jpeg"
+        alt="South Texas Homeschool Prom and Formal logo"
+        class="hero-logo">
+
+      <div class="hero-eyebrow">
+        South Texas Homeschool Prom & Formal Presents
+      </div>
+
+      <h1>
+        The Midnight
+        <span>Carnival of Masques</span>
+      </h1>
+
+      <p class="hero-tagline">
+        At midnight, every mask tells a story.
+      </p>
+
+      <div class="ornament">
+        ✦ ◆ ✦
+      </div>
+
+      <p class="hero-date">
+        2027 • Date & Location To Be Announced
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#event" class="button button-gold">
+          Enter the Carnival
+        </a>
+
+        <a href="#about" class="button button-clear">
+          About Us
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <section class="event-section" id="event">
+
+    <div class="section-inner">
+
+      <div class="section-heading">
+
+        <div class="small">
+          The 2027 Formal
+        </div>
+
+        <h2>
+          Step Beyond the Gates
+        </h2>
+
+        <div class="ornament">
+          ✦ ◆ ✦
+        </div>
+
+      </div>
+
+      <div class="event-layout">
+
+        <div class="event-art">
+
+          <img
+            src="prom-flier.jpeg"
+            alt="The Midnight Carnival of Masques 2027">
+
+        </div>
+
+        <div class="event-copy">
+
+          <h3>
+            The Midnight Carnival
+            <br>
+            of Masques
+          </h3>
+
+          <div class="tagline">
+            At midnight, every mask tells a story.
+          </div>
+
+          <p>
+            Behind the velvet curtain waits an evening of masks,
+            music, mystery, dancing and old-world carnival wonder.
+          </p>
+
+          <p>
+            South Texas homeschool students are invited to step into
+            a world of gilded secrets, candlelight and unforgettable
+            memories at our 2027 masquerade formal.
+          </p>
+
+          <p>
+            Come dressed for an evening where nothing is quite what it seems.
+          </p>
+
+          <div class="event-details">
+
+            <div class="detail">
+              <strong>Date</strong>
+              <span>To Be Announced</span>
+            </div>
+
+            <div class="detail">
+              <strong>Time</strong>
+              <span>To Be Announced</span>
+            </div>
+
+            <div class="detail">
+              <strong>Location</strong>
+              <span>South Texas • To Be Announced</span>
+            </div>
+
+            <div class="detail">
+              <strong>Theme</strong>
+              <span>Masquerade Ball • Midnight Carnival</span>
+            </div>
+
+            <div class="detail">
+              <strong>Tickets</strong>
+              <span>Coming Soon</span>
+            </div>
+
+          </div>
+
+          <a href="#event" class="button button-gold">
+            Tickets Coming Soon
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="mission">
+
+    <div class="section-inner">
+
+      <div class="section-heading">
+
+        <div class="small">
+          Our Mission
+        </div>
+
+      </div>
+
+      <blockquote>
+
+        The mission of South Texas Homeschool Prom & Formal
+        is to provide homeschool students with welcoming
+        and memorable opportunities to celebrate milestones,
+        build friendships, and create lasting memories.
+
+      </blockquote>
+
+      <div class="mission-line">
+        ✦
+      </div>
+
+      <p class="mission-description">
+
+        As a nonprofit organization, we believe homeschool
+        students deserve the same special traditions and
+        experiences enjoyed by their peers. Through thoughtfully
+        planned formal events, we bring homeschool students
+        together from near and far to celebrate, connect, and
+        simply enjoy being part of something special.
+
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <section class="about" id="about">
+
+    <div class="section-inner">
+
+      <div class="section-heading">
+
+        <div class="small">
+          Who We Are
+        </div>
+
+        <h2>
+          More Than One Night
+        </h2>
+
+        <div class="ornament">
+          ✦ ◆ ✦
+        </div>
+
+      </div>
+
+      <div class="about-grid">
+
+        <div>
+
+          <h3>
+            South Texas Homeschool Prom & Formal
+          </h3>
+
+          <p>
+            South Texas Homeschool Prom & Formal is a nonprofit
+            organization created to give homeschool students
+            opportunities to experience the celebrations,
+            friendships and milestones that make these years unforgettable.
+          </p>
+
+          <p>
+            Homeschooling may look different from a traditional
+            school experience, but that shouldn't mean missing
+            the moments students look forward to.
+          </p>
+
+          <p>
+            Our events welcome homeschool students from communities
+            near and far, giving them a place to come together,
+            meet new people, celebrate and make memories.
+          </p>
+
+          <div class="about-heart">
+
+            Our mission is simple: to bring homeschool students
+            together and give them a place to belong, celebrate,
+            make new friends, and create the kind of memories
+            they'll talk about for years to come.
+
+          </div>
+
+        </div>
+
+        <div>
+
+          <h3>
+            Why We Do It
+          </h3>
+
+          <p>
+            We believe every student deserves the chance to dress up,
+            dance, laugh and experience a truly special night,
+            no matter where they call home.
+          </p>
+
+          <div class="values">
+
+            <div class="value-card">
+
+              <h4>Belong</h4>
+
+              <p>
+                A welcoming place for homeschool students to come together
+                and be part of something special.
+              </p>
+
+            </div>
+
+            <div class="value-card">
+
+              <h4>Connect</h4>
+
+              <p>
+                Opportunities to meet new people, build friendships
+                and strengthen our homeschool community.
+              </p>
+
+            </div>
+
+            <div class="value-card">
+
+              <h4>Celebrate</h4>
+
+              <p>
+                Giving students the traditions, milestones and formal
+                experiences they've been looking forward to.
+              </p>
+
+            </div>
+
+            <div class="value-card">
+
+              <h4>Remember</h4>
+
+              <p>
+                Creating the kind of nights and memories students will
+                carry with them long after the music ends.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="waivers" id="waivers">
+
+    <div class="section-inner">
+
+      <div class="section-heading">
+
+        <div class="small">
+          Before the Ball
+        </div>
+
+        <h2>
+          Forms & Waivers
+        </h2>
+
+        <div class="ornament">
+          ✦ ◆ ✦
+        </div>
+
+      </div>
+
+      <div class="waiver-card">
+
+        <h3>
+          Event Forms
+        </h3>
+
+        <p>
+          Required participant forms, parent or guardian permissions,
+          event policies and waivers will be available here before the event.
+        </p>
+
+        <a href="#waivers" class="button button-gold">
+          Waivers Coming Soon
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="photos" id="photos">
+
+    <div class="section-inner">
+
+      <div class="section-heading">
+
+        <div class="small">
+          Past Events
+        </div>
+
+        <h2>
+          The Memories We Make
+        </h2>
+
+        <div class="ornament">
+          ✦ ◆ ✦
+        </div>
+
+      </div>
+
+      <div class="photo-placeholder">
+
+        <h3>
+          Our Gallery Is Coming
+        </h3>
+
+        <p>
+          A look back at the celebrations, friendships and unforgettable
+          nights of South Texas Homeschool Prom & Formal.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="contact" id="contact">
+
+    <div class="section-inner">
+
+      <div class="section-heading">
+
+        <div class="small">
+          Questions?
+        </div>
+
+        <h2>
+          We'd Love to Hear From You
+        </h2>
+
+        <div class="ornament">
+          ✦ ◆ ✦
+        </div>
+
+      </div>
+
+      <p>
+        Have questions about attending, volunteering, sponsorships
+        or upcoming South Texas Homeschool Prom & Formal events?
+        Send us a message.
+      </p>
+
+      <a
+        href="mailto:stx.homeschoolprom@gmail.com"
+        class="button button-gold">
+
+        Contact Us
+
+      </a>
+
+      <a
+        href="mailto:stx.homeschoolprom@gmail.com"
+        class="contact-email">
+
+        stx.homeschoolprom@gmail.com
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+
+    <div class="footer-name">
+      South Texas Homeschool Prom & Formal
+    </div>
+
+    <div class="nonprofit">
+      Nonprofit Organization
+    </div>
+
+    <p>
+      Bringing homeschool students together from across South Texas and beyond.
+    </p>
+
+    <p style="margin-top:18px;">
+      © 2026 South Texas Homeschool Prom & Formal. All Rights Reserved.
+    </p>
+
+  </footer>
+
+
+  <script>
+
+    const menuButton = document.getElementById("menuButton");
+    const navLinks = document.getElementById("navLinks");
+
+    menuButton.addEventListener("click", function () {
+      navLinks.classList.toggle("show");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(function(link) {
+      link.addEventListener("click", function() {
+        navLinks.classList.remove("show");
+      });
+    });
+
+  </script>
+
 </body>
 </html>
