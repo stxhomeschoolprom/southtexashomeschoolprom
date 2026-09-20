@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Italianno&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Italianno&family=Montserrat:wght@300;400;500;600&family=Rye&display=swap" rel="stylesheet">
 
   <style>
 
@@ -171,7 +171,7 @@
     }
 
     .hero-eyebrow {
-      color: #e1c88f;
+     color: #7a4f16;
 
       font-size: .78rem;
       font-weight: 500;
@@ -287,32 +287,41 @@
 }
 
 .event-title {
-  font-family: "Cormorant Garamond", serif;
-
-  font-size: clamp(3rem, 8vw, 6.5rem);
-  font-weight: 500;
-
-  line-height: .9;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-
-  margin: 0;
+  margin: 12px 0 8px;
+  text-align: center;
+  line-height: 0.9;
 }
 
-.event-title span {
+.title-midnight {
   display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3.6rem, 7vw, 6.8rem);
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: #18202b;
+}
 
-  font-family: "Italianno", cursive;
+.title-carnival {
+  display: block;
+  font-family: "Rye", serif;
+  font-size: clamp(5.5rem, 12vw, 11rem);
+  line-height: 0.82;
+  margin: 8px 0 2px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #7a2634;
+  text-shadow: 2px 2px 0 #c89b45;
+}
 
-  font-size: .78em;
-  font-weight: 400;
-
-  text-transform: none;
-  letter-spacing: 0;
-
-  color: #c89b45;
-
-  margin-top: 15px;
+.title-masques {
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3.4rem, 6.5vw, 6.4rem);
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: #18202b;
 }
     /* BUTTONS */
 
@@ -985,14 +994,13 @@
       South Texas Homeschool Prom & Formal Presents
     </div>
 
-    <h1 class="event-title">
-      The Midnight
-      <span>Carnival of Masques</span>
-    </h1>
+   <h1 class="event-title">
+  <span class="title-midnight">The Midnight</span>
+  <span class="title-carnival">Carnival</span>
+  <span class="title-masques">of Masques</span>
+</h1>
 
-    <p class="hero-tagline">
-      At midnight, every mask tells a story.
-    </p>
+    <p class="hero-tagline">An elegant masquerade prom filled with music, dancing, unforgettable moments, and a touch of carnival magic.</p>
 
     <div class="ornament">
       ✦ ◆ ✦
@@ -1004,18 +1012,7 @@
   1404 Zanderson Ave • Jourdanton, Texas 78026
 </p>
 
-    <div class="hero-buttons">
-
-      <a href="#event" class="button button-gold">
-        Enter the Carnival
-      </a>
-
-      <a href="#about" class="button button-clear">
-        About Us
-      </a>
-
-    </div>
-
+ 
   </div>
 
 </header>
