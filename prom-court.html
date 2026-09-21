@@ -1,45 +1,461 @@
-<section class="card">
-  <h2>How to Enter</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <p>
-    Ready to throw your name in for the crown? Juniors and seniors attending
-    prom may nominate themselves or be nominated by a friend.
-  </p>
+  <title>Prom Court | South Texas Homeschool Prom & Formal</title>
 
-  <p>
-    To officially enter Prom Court:
-  </p>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@400;500;600;700&family=Rye&display=swap" rel="stylesheet">
 
-  <ul>
-    <li>
-      Select <strong>YES</strong> when asked on your event Google Form
-      if you'd like to participate in Prom Court.
-    </li>
-    <li>
-      Email your Prom Court submission to
-      <strong>stx.homeschoolprom@gmail.com</strong>.
-    </li>
-  </ul>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-  <p>Your email should include:</p>
+    body {
+      margin: 0;
+      background: #f4eee3;
+      color: #20242a;
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.7;
+    }
 
-  <ul>
-    <li>A photo of yourself</li>
-    <li>A short bio so everyone can get to know you</li>
-    <li>
-      A few words about why you'd like to be the 2027 Prom King or Prom Queen
-    </li>
-  </ul>
+    header {
+      background: #111822;
+      color: #f4eee3;
+      text-align: center;
+      padding: 34px 20px 28px;
+      border-bottom: 3px solid #b48a45;
+    }
 
-  <p>
-    Your reason doesn't have to be serious or impressive. Tell us why you'd
-    love the crown, make us laugh, tell us something memorable about yourself,
-    or simply admit that you really want to see yourself wearing one.
-  </p>
+    .logo {
+      width: 135px;
+      max-width: 40vw;
+      margin-bottom: 12px;
+    }
 
-  <p>
-    <strong>Prom Court submissions must be received by April 21, 2027.</strong>
-    That's the same final cutoff as prom registration, so don't wait until
-    the clock strikes midnight!
-  </p>
-</section>
+    .eyebrow {
+      color: #d2ad67;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.8rem, 7vw, 5rem);
+      font-style: italic;
+      font-weight: 600;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      color: #d9c9ad;
+    }
+
+    nav {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    nav a {
+      color: #f4eee3;
+      text-decoration: none;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #d2ad67;
+    }
+
+    main {
+      width: min(850px, 92%);
+      margin: 0 auto;
+      padding: 55px 0 75px;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 45px;
+    }
+
+    .intro h2 {
+      font-family: "Rye", serif;
+      color: #702b3a;
+      font-size: clamp(2rem, 5vw, 3.3rem);
+      font-weight: 400;
+      margin: 0 0 15px;
+    }
+
+    .intro p {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.35rem;
+    }
+
+    .ornament {
+      color: #b48a45;
+      text-align: center;
+      font-size: 1.2rem;
+      letter-spacing: 0.3em;
+      margin: 28px 0;
+    }
+
+    .card {
+      background: #fffaf2;
+      border: 1px solid #d8c9b1;
+      border-radius: 6px;
+      padding: 28px;
+      margin: 22px 0;
+    }
+
+    .card h2 {
+      margin: 0 0 12px;
+      color: #702b3a;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 2rem;
+    }
+
+    .card ul {
+      padding-left: 22px;
+    }
+
+    .highlight {
+      text-align: center;
+      background: #111822;
+      color: #f4eee3;
+      padding: 32px 25px;
+      margin: 35px 0;
+      border-top: 3px solid #b48a45;
+      border-bottom: 3px solid #b48a45;
+    }
+
+    .highlight h2 {
+      font-family: "Cormorant Garamond", serif;
+      color: #d2ad67;
+      font-size: 2.2rem;
+      margin: 0 0 10px;
+    }
+
+    .highlight p {
+      margin: 8px auto;
+      max-width: 650px;
+    }
+
+    .deadline {
+      color: #702b3a;
+      font-weight: 700;
+    }
+
+    .last-year {
+      text-align: center;
+    }
+
+    .last-year strong {
+      color: #702b3a;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 45px;
+    }
+
+    .cta h2 {
+      font-family: "Rye", serif;
+      color: #702b3a;
+      font-weight: 400;
+      font-size: 2.2rem;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: #702b3a;
+      color: white;
+      text-decoration: none;
+      padding: 13px 24px;
+      margin-top: 10px;
+      border: 2px solid #b48a45;
+      border-radius: 3px;
+      font-weight: 700;
+    }
+
+    .cta a:hover {
+      background: #5d2230;
+    }
+
+    footer {
+      background: #111822;
+      color: #d9c9ad;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #f4eee3;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        gap: 10px 14px;
+      }
+
+      nav a {
+        font-size: 0.75rem;
+      }
+
+      main {
+        padding-top: 35px;
+      }
+
+      .card {
+        padding: 22px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="prom-logo.jpeg" alt="South Texas Homeschool Prom & Formal" class="logo">
+
+  <div class="eyebrow">2027 Prom Court</div>
+  <h1>You Should See Me in a Crown</h1>
+  <p>The Midnight Carnival of Masques • May 1, 2027</p>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#event">Tickets</a>
+    <a href="faq.html">FAQ</a>
+    <a href="prom-court.html">Prom Court</a>
+    <a href="index.html#photos">Photos</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="intro">
+    <h2>Think the Crown Belongs to You?</h2>
+
+    <p>
+      Or maybe you know someone who absolutely needs to see themselves
+      in one. Either way, don't be shy!
+    </p>
+
+    <p>
+      Juniors and seniors attending the 2027 prom are invited to enter
+      our Prom Court for <strong>Prom King or Prom Queen.</strong>
+    </p>
+  </section>
+
+  <div class="ornament">✦ ◆ ✦</div>
+
+
+  <!-- HOW TO ENTER -->
+
+  <section class="card">
+    <h2>How to Enter</h2>
+
+    <p>
+      Ready to throw your name in for the crown? Juniors and seniors attending
+      prom may nominate themselves or be nominated by a friend.
+    </p>
+
+    <p>
+      To officially enter Prom Court:
+    </p>
+
+    <ul>
+      <li>
+        Select <strong>YES</strong> when asked on your event Google Form
+        if you'd like to participate in Prom Court.
+      </li>
+
+      <li>
+        Email your Prom Court submission to
+        <strong>stx.homeschoolprom@gmail.com</strong>.
+      </li>
+    </ul>
+
+    <p>Your email should include:</p>
+
+    <ul>
+      <li>A photo of yourself</li>
+      <li>A short bio so everyone can get to know you</li>
+      <li>
+        A few words about why you'd like to be the
+        2027 Prom King or Prom Queen
+      </li>
+    </ul>
+
+    <p>
+      Your reason doesn't have to be serious or impressive. Tell us why you'd
+      love the crown, make us laugh, tell us something memorable about yourself,
+      or simply admit that you really want to see yourself wearing one.
+    </p>
+
+    <p class="deadline">
+      Prom Court submissions must be received by April 21, 2027.
+    </p>
+
+    <p>
+      That's the same final cutoff as prom registration, so make sure
+      everything is in by the deadline!
+    </p>
+  </section>
+
+
+  <!-- MEET THE COURT -->
+
+  <section class="card">
+    <h2>Meet the Court</h2>
+
+    <p>
+      Prom Court nominations will be featured online before the event,
+      including each candidate's photo and bio, so students can get to
+      know this year's court.
+    </p>
+
+    <p>
+      On prom night, we'll also have a Prom Court table displaying all
+      of our nominees, their photos, and their bios before voting begins.
+    </p>
+  </section>
+
+
+  <!-- VOTING -->
+
+  <section class="highlight">
+    <h2>Voting Happens at Prom</h2>
+
+    <p>
+      <strong>No online voting.</strong>
+    </p>
+
+    <p>
+      Every student attending prom gets
+      <strong>one vote</strong>.
+    </p>
+
+    <p>
+      Voting will take place in person during the event, and when the
+      votes are counted, we'll crown our
+      <strong>2027 Prom King and Prom Queen!</strong>
+    </p>
+  </section>
+
+
+  <!-- PRIZES -->
+
+  <section class="card">
+    <h2>What's Waiting for the Winners?</h2>
+
+    <p>
+      Besides getting to walk away as the 2027 Prom King or Prom Queen,
+      our winners will each receive:
+    </p>
+
+    <ul>
+      <li>A crown</li>
+      <li>A Prom King or Prom Queen sash</li>
+      <li>Gift cards</li>
+    </ul>
+
+    <p>
+      And, of course, permanent bragging rights.
+    </p>
+  </section>
+
+
+  <!-- LAST YEAR -->
+
+  <section class="card last-year">
+    <h2>And About Last Year...</h2>
+
+    <p>
+      Congratulations again to our 2026 Prom Queen and King,
+      <strong>Ava and Peter!</strong>
+    </p>
+
+    <p>
+      And a very special shoutout to
+      <strong>Tony, our runner-up King.</strong>
+    </p>
+
+    <p>
+      Last year's King vote ended in a tie.
+    </p>
+
+    <p>
+      So we had a <strong>dance battle.</strong>
+    </p>
+
+    <p>
+      That also ended in a tie.
+    </p>
+
+    <p>
+      Which meant there was only one thing left to do:
+    </p>
+
+    <p>
+      <strong>Rock. Paper. Scissors.</strong>
+    </p>
+
+    <p>
+      We have no idea what this year's court will bring,
+      but that's half the fun.
+    </p>
+  </section>
+
+
+  <!-- FINAL CALL -->
+
+  <section class="cta">
+    <h2>Don't Be Shy.</h2>
+
+    <p>
+      Throw your name into the ring, nominate a friend,
+      and give everyone someone worth cheering for on prom night.
+    </p>
+
+    <p>
+      Maybe you'll walk in wearing a mask
+      and walk out wearing a crown.
+    </p>
+
+    <p>
+      <strong>Submissions close April 21, 2027.</strong>
+    </p>
+
+    <a href="mailto:stx.homeschoolprom@gmail.com">
+      Send Your Prom Court Submission
+    </a>
+  </section>
+
+</main>
+
+<footer>
+  South Texas Homeschool Prom & Formal<br>
+  <a href="mailto:stx.homeschoolprom@gmail.com">
+    stx.homeschoolprom@gmail.com
+  </a>
+</footer>
+
+</body>
+</html>
