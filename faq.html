@@ -8,7 +8,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,500&family=Montserrat:wght@400;500;600;700&family=Rye&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@400;500;600;700&family=Rye&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -18,7 +18,7 @@
     body {
       margin: 0;
       background: #f4eee3;
-      color: #18202b;
+      color: #20242a;
       font-family: "Montserrat", sans-serif;
       line-height: 1.7;
     }
@@ -27,90 +27,83 @@
       background: #111822;
       color: #f4eee3;
       text-align: center;
-      padding: 35px 20px 30px;
-      border-bottom: 3px solid #b68a3a;
+      padding: 34px 20px 26px;
+      border-bottom: 3px solid #b48a45;
     }
 
     .logo {
-      width: 115px;
-      height: auto;
-      border-radius: 50%;
+      width: 135px;
+      max-width: 40vw;
       margin-bottom: 12px;
     }
 
     header h1 {
-      font-family: "Cormorant Garamond", serif;
-      font-size: clamp(2.7rem, 7vw, 4.8rem);
-      font-weight: 500;
       margin: 0;
-      line-height: 1;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 600;
     }
 
     header p {
-      margin: 12px 0 0;
-      color: #d9c49b;
-      font-size: 0.9rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      margin: 6px 0 0;
+      color: #d9c9ad;
     }
 
     nav {
-      background: #7a2634;
-      padding: 13px 15px;
-      text-align: center;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
     }
 
     nav a {
-      color: white;
+      color: #f4eee3;
       text-decoration: none;
-      margin: 0 10px;
-      font-size: 0.82rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
       font-weight: 600;
     }
 
     nav a:hover {
-      color: #e2c47a;
+      color: #d2ad67;
     }
 
     main {
-      max-width: 900px;
+      width: min(900px, 92%);
       margin: 0 auto;
-      padding: 55px 20px 80px;
+      padding: 55px 0 75px;
     }
 
     .intro {
       text-align: center;
-      margin-bottom: 55px;
+      max-width: 700px;
+      margin: 0 auto 45px;
     }
 
     .intro h2 {
       font-family: "Cormorant Garamond", serif;
-      font-size: clamp(2.4rem, 6vw, 4rem);
-      color: #7a2634;
-      margin: 0 0 10px;
+      font-size: 2.3rem;
+      margin-bottom: 10px;
+      color: #702b3a;
     }
 
-    .intro p {
-      max-width: 650px;
-      margin: auto;
+    .faq-section {
+      margin: 45px 0;
     }
 
-    .category {
-      margin-top: 55px;
-    }
-
-    .category h2 {
+    .faq-section h2 {
       font-family: "Cormorant Garamond", serif;
       font-size: 2.2rem;
-      color: #7a2634;
-      margin-bottom: 18px;
-      padding-bottom: 7px;
-      border-bottom: 1px solid #c7a65a;
+      color: #702b3a;
+      text-align: center;
+      margin-bottom: 22px;
     }
 
     details {
-      background: #fffaf1;
-      border: 1px solid #d8c7a7;
+      background: #fffaf2;
+      border: 1px solid #d8c9b1;
       margin: 12px 0;
       border-radius: 5px;
       overflow: hidden;
@@ -118,47 +111,28 @@
 
     summary {
       cursor: pointer;
-      padding: 18px 45px 18px 20px;
+      padding: 17px 20px;
       font-family: "Cormorant Garamond", serif;
-      font-size: 1.3rem;
+      font-size: 1.25rem;
       font-weight: 600;
       color: #18202b;
-      position: relative;
-      list-style: none;
-    }
-
-    summary::-webkit-details-marker {
-      display: none;
-    }
-
-    summary::after {
-      content: "+";
-      position: absolute;
-      right: 20px;
-      color: #9a722c;
-      font-family: "Montserrat", sans-serif;
-      font-size: 1.4rem;
-    }
-
-    details[open] summary::after {
-      content: "−";
     }
 
     details[open] summary {
-      color: #7a2634;
-      border-bottom: 1px solid #e3d6bd;
+      border-bottom: 1px solid #ded1bc;
+      background: #f8f0e4;
     }
 
     .answer {
-      padding: 5px 20px 20px;
+      padding: 4px 20px 18px;
     }
 
-    .answer strong {
-      color: #7a2634;
+    .answer p {
+      margin: 14px 0 0;
     }
 
     .answer ul {
-      padding-left: 22px;
+      margin-bottom: 0;
     }
 
     .note {
@@ -166,40 +140,33 @@
       font-size: 1.15rem;
     }
 
-    .email {
-      font-weight: 700;
-      color: #7a2634;
-    }
-
     footer {
       background: #111822;
-      color: #d9c49b;
+      color: #d9c9ad;
       text-align: center;
       padding: 30px 20px;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
 
     footer a {
-      color: #e2c47a;
-      text-decoration: none;
+      color: #f4eee3;
     }
 
-    @media (max-width: 650px) {
+    @media (max-width: 600px) {
+      nav {
+        gap: 10px 14px;
+      }
+
       nav a {
-        display: inline-block;
-        margin: 5px 7px;
+        font-size: 0.75rem;
       }
 
       main {
-        padding-top: 40px;
-      }
-
-      .category {
-        margin-top: 42px;
+        padding-top: 35px;
       }
 
       summary {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
       }
     }
   </style>
@@ -208,72 +175,67 @@
 <body>
 
 <header>
-  <a href="index.html">
-    <img src="prom-logo.jpeg" alt="South Texas Homeschool Prom & Formal" class="logo">
-  </a>
+  <img src="prom-logo.jpeg" alt="South Texas Homeschool Prom & Formal" class="logo">
 
   <h1>Frequently Asked Questions</h1>
   <p>The Midnight Carnival of Masques • May 1, 2027</p>
-</header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="index.html#event">Event & Tickets</a>
-  <a href="prom-court.html">Prom Court</a>
-  <a href="photos.html">Photos</a>
-  <a href="faq.html">FAQ</a>
-  <a href="index.html#about">About</a>
-  <a href="index.html#contact">Contact</a>
-</nav>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#event">Event & Tickets</a>
+    <a href="index.html#prom-court">Prom Court</a>
+    <a href="index.html#photos">Photos</a>
+    <a href="faq.html">FAQ</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
 
 <main>
 
   <div class="intro">
     <h2>Before the Masks Go On...</h2>
     <p>
-      Everything you need to know about attending The Midnight Carnival
-      of Masques. Click any question below to reveal the answer.
+      Everything you need to know before prom night. If you still have a
+      question after reading through our FAQ, please reach out. We're happy to help!
     </p>
   </div>
 
 
   <!-- ATTENDANCE & GUESTS -->
-  <section class="category">
+
+  <section class="faq-section">
     <h2>Attendance & Guests</h2>
 
     <details>
       <summary>Who can attend?</summary>
       <div class="answer">
         <p>
-          The Midnight Carnival of Masques is open to homeschool students
-          who are <strong>at least 14 years old and currently in 9th through
-          12th grade</strong>. Students are welcome from South Texas and beyond.
+          Homeschool students from <strong>South Texas and beyond</strong> are welcome!
+          Students must be <strong>at least 14 years old and currently in
+          9th–12th grade</strong> for the 2026–2027 school year.
         </p>
       </div>
     </details>
 
     <details>
-      <summary>Can I bring a guest who isn't homeschooled?</summary>
+      <summary>Can I bring someone who isn't homeschooled?</summary>
       <div class="answer">
         <p>
-          Yes. An eligible homeschool student may bring a non-homeschooled
-          guest. Guests follow the same waiver, dress code, conduct, and
-          event rules.
+          Yes! Eligible homeschool students may bring a non-homeschooled guest.
+          Guests follow the same waiver, dress code, conduct, and event rules
+          as everyone else.
         </p>
       </div>
     </details>
 
     <details>
-      <summary>Can my guest already be graduated?</summary>
+      <summary>Can I bring a recent graduate?</summary>
       <div class="answer">
         <p>
-          Yes. Recent graduates may attend as the guest of an eligible
-          student if they graduated within the previous <strong>two years</strong>
-          and are <strong>no older than 19 on May 1, 2027</strong>.
-        </p>
-        <p>
-          For the 2027 prom, graduates from <strong>2025 or 2026</strong>
-          may attend as guests if they meet the age requirement.
+          Yes. Graduates from <strong>2025 or 2026</strong> may attend as the
+          guest of an eligible student as long as they are
+          <strong>no older than 19 on May 1, 2027</strong>.
         </p>
       </div>
     </details>
@@ -282,9 +244,8 @@
       <summary>Do I need a date?</summary>
       <div class="answer">
         <p>
-          Nope! Come with a date, a friend, a group, or on your own.
-          A Pair ticket is simply discounted admission for two people.
-          You do not have to be a couple.
+          Absolutely not. Come with a date, a friend, a group, or on your own!
+          A pair ticket is simply discounted admission for two people.
         </p>
       </div>
     </details>
@@ -292,48 +253,40 @@
 
 
   <!-- TICKETS -->
-  <section class="category">
+
+  <section class="faq-section">
     <h2>Tickets & Registration</h2>
 
     <details>
-      <summary>How much are tickets?</summary>
+      <summary>When do tickets go on sale, and how much are they?</summary>
       <div class="answer">
+        <p>Tickets open <strong>October 1, 2026</strong>.</p>
+
         <p>
-          <strong>October 1–December 31:</strong><br>
-          $50 Individual • $90 Pair
+          <strong>Oct. 1–Dec. 31:</strong> $50 individual / $90 pair<br>
+          <strong>Beginning Jan. 1:</strong> $60 individual / $110 pair
         </p>
 
         <p>
-          <strong>Beginning January 1:</strong><br>
-          $60 Individual • $110 Pair
+          Registration after <strong>April 1</strong> may include an additional
+          late fee due to final catering, seating, security, memorabilia,
+          and event preparations.
+        </p>
+
+        <p>
+          The <strong>final registration deadline is April 21, 2027</strong>.
+          Late registrations may have limited or different meal options.
         </p>
       </div>
     </details>
 
     <details>
-      <summary>When is the registration deadline?</summary>
+      <summary>Are tickets refundable?</summary>
       <div class="answer">
         <p>
-          Please register by <strong>April 1</strong> whenever possible.
-          Registrations after April 1 may have an additional late-registration
-          fee and limited meal options as we finalize catering, seating,
-          security, memorabilia, and other arrangements.
-        </p>
-
-        <p>
-          <strong>Registration closes completely April 21, 2027.
-          No registrations will be accepted after this date.</strong>
-        </p>
-      </div>
-    </details>
-
-    <details>
-      <summary>Are tickets refundable or transferable?</summary>
-      <div class="answer">
-        <p>
-          Tickets are <strong>non-refundable</strong>, but they may be
-          transferred to another eligible student. Contact us so we can
-          update the attendee information and required paperwork.
+          Tickets are <strong>non-refundable</strong>, but may be transferred
+          to another eligible student. Contact us first so we can update the
+          attendee information and paperwork.
         </p>
       </div>
     </details>
@@ -341,28 +294,33 @@
 
 
   <!-- ATTIRE -->
-  <section class="category">
+
+  <section class="faq-section">
     <h2>The Attire: Midnight Elegance Behind the Mask</h2>
 
     <details>
       <summary>What is the dress code?</summary>
       <div class="answer">
         <p>
-          This is <strong>prom</strong>, and we want it to feel like prom.
+          <strong>Formal Prom Attire, with polished Semi-Formal Attire accepted.
+          Black tie is optional.</strong>
         </p>
 
         <p>
-          The dress code is <strong>Formal Prom Attire, with polished
-          Semi-Formal Attire accepted.</strong> Black tie is optional.
+          We encourage students to dress up and make the evening special while
+          still feeling comfortable and confident in what they wear.
         </p>
 
         <p>
-          The Midnight Carnival aesthetic is dark, rich, and old-world.
-          Think jewel tones, burgundy, midnight blue, black, antique gold,
-          velvet, satin, lace, brocade, and dramatic vintage details.
+          Deep jewel tones, black, antique gold, velvet, satin, lace, brocade,
+          and dramatic details fit <em>The Midnight Carnival of Masques</em>
+          beautifully, but <strong>dressing to the theme is completely optional.</strong>
         </p>
 
-        <p>The theme is optional. <strong>Individuality is encouraged.</strong></p>
+        <p>
+          Masks are encouraged, not required. Carnival-inspired details are
+          welcome, but remember: <strong>formal masquerade, not circus costume.</strong>
+        </p>
       </div>
     </details>
 
@@ -370,14 +328,20 @@
       <summary>What should ladies wear?</summary>
       <div class="answer">
         <p>
-          <strong>Floor-length evening gowns and formal prom gowns are
-          encouraged.</strong> Full-length formal alternatives are also welcome.
+          Traditional prom gowns and floor-length evening gowns are wonderful
+          choices, but <strong>they are not required</strong>.
         </p>
 
         <p>
-          Attire must provide appropriate coverage while standing, sitting,
-          bending, and dancing. <strong>Slits may not extend to the hip bone</strong>,
-          and appropriate coverage must be maintained throughout the evening.
+          Choose something that makes you feel comfortable, confident, and like
+          yourself while providing appropriate coverage throughout the evening.
+        </p>
+
+        <p>
+          <strong>Dress slits should remain below the hip bone. Fully sheer
+          bodices require appropriate lining underneath.</strong> Sheer details,
+          lace, mesh, and illusion elements are welcome as long as appropriate
+          coverage is maintained.
         </p>
       </div>
     </details>
@@ -386,19 +350,17 @@
       <summary>What should gentlemen wear?</summary>
       <div class="answer">
         <p>
-          Tuxedos are welcome but <strong>not required</strong>.
-        </p>
-
-        <p>
           Suits, dress slacks, dress shirts, ties or bow ties, sport coats,
-          velvet jackets, waistcoats, and other polished formal or semi-formal
-          attire are welcome.
+          velvet jackets, waistcoats, and polished formal or semi-formal attire
+          are all appropriate.
         </p>
 
+        <p><strong>Tuxedos are welcome, but not required.</strong></p>
+
         <p>
-          Undergarments should not be visible, pants should be worn properly,
-          and casual shirts such as T-shirts, tank tops, or muscle shirts do
-          not meet the dress code.
+          Pants should be worn properly, undergarments should not be visible,
+          and casual T-shirts, tank tops, and muscle shirts do not meet the
+          dress code.
         </p>
       </div>
     </details>
@@ -406,29 +368,17 @@
     <details>
       <summary>Is Texas Formal okay?</summary>
       <div class="answer">
+        <p>Absolutely. <strong>Formal Texas attire is welcome.</strong></p>
+
         <p>
-          Yes, but we're talking <strong>formal Texas Formal</strong>.
+          Dress shirts, formal jackets, polished western boots, western hats,
+          and similar dress attire are appropriate.
         </p>
 
         <p>
-          Dress shirts, formal jackets, polished western boots, and western
-          hats are welcome.
-        </p>
-
-        <p>
-          If you're wearing denim, it must be <strong>BLACK denim only</strong>.
-          No blue denim, regardless of how dark it is.
-        </p>
-
-        <p>
-          And those jeans better be clean, sharply pressed, and
-          <strong>starched enough to practically stand on their own,
-          with creases sharp enough to slice a steak.</strong>
-        </p>
-
-        <p>
-          Everyday jeans, faded or distressed denim, and casual
-          jeans-and-boots outfits do not meet the dress code.
+          If wearing jeans, please choose
+          <strong> dark or black denim that is clean, starched, and sharply creased</strong>,
+          keeping the western style while maintaining the formal atmosphere of prom.
         </p>
       </div>
     </details>
@@ -437,20 +387,16 @@
       <summary>Does formal attire have to be expensive?</summary>
       <div class="answer">
         <p>
-          Absolutely not. Thrift it. Borrow it. Swap it. Alter it.
-          Restyle something you already own.
+          Not at all. Thrift, borrow, swap, alter, shop resale, or work with
+          something you already own. We want the dress code to make the evening
+          feel special, <strong>not make attending financially out of reach.</strong>
         </p>
 
         <p>
-          Check resale and consignment shops, community formalwear programs,
-          giveaways, and online resale groups. Beautiful prom attire can be
-          found for very little or even <strong>completely free</strong>
-          if you know where to look.
-        </p>
-
-        <p>
-          <strong>We want the dress code to make the night feel special,
-          not make attending financially out of reach.</strong>
+          If you need help finding something, email
+          <strong>stx.homeschoolprom@gmail.com</strong>. We may be able to
+          connect you with resources or families with formalwear to lend,
+          donate, swap, or sell.
         </p>
       </div>
     </details>
@@ -461,50 +407,50 @@
         <p><strong>Make the evening your own.</strong></p>
 
         <p>
-          This is your prom, so have fun with it. Dress outside the norm!
           Be elegant, dramatic, vintage, romantic, gothic, glamorous,
-          culturally expressive, unconventional, or classic.
+          culturally expressive, unconventional, classic, western, or
+          somewhere completely unexpected.
         </p>
 
         <p>
-          Whether your style leans classic Texas, old-world masquerade,
-          modern formal, or somewhere completely unexpected,
-          <strong>make it yours.</strong>
+          We want students to enjoy dressing up without feeling like they
+          have to fit one particular mold to belong.
         </p>
 
         <p>
-          Just follow the dress and coverage guidelines above,
-          and come ready for prom.
+          Follow the dress and coverage guidelines, bring your own style,
+          and come ready to celebrate.
+          <strong>Most importantly, we want every student walking through
+          those doors to feel welcomed, comfortable, confident, and excited
+          to be there.</strong>
         </p>
-      </div>
-    </details>
-
-    <details>
-      <summary>Do I have to wear a mask or dress to the theme?</summary>
-      <div class="answer">
-        <p>
-          No. Masquerade masks and Midnight Carnival styling are
-          <strong>encouraged, not required</strong>.
-        </p>
-
-        <p>
-          This is a dark, vintage carnival masquerade, not a circus or
-          costume party. Think candlelight, velvet, jewel tones, antique gold,
-          mysterious masks, and old-world carnival elegance.
-        </p>
-
-        <p><strong>Carnival flair is welcome. Circus costumes are not.</strong></p>
       </div>
     </details>
   </section>
 
 
   <!-- THE EVENING -->
-  <section class="category">
+
+  <section class="faq-section">
     <h2>The Evening</h2>
 
     <details>
-      <summary>What's included with my ticket?</summary>
+      <summary>When and where is prom?</summary>
+      <div class="answer">
+        <p>
+          <strong>May 1, 2027 | 6:00–10:00 PM</strong><br>
+          Doors open at <strong>5:15 PM</strong> for check-in and photos.
+        </p>
+
+        <p>
+          <strong>American Legion Post 436 / Jourdanton Legion Hall</strong><br>
+          1404 Zanderson Ave, Jourdanton, TX 78026
+        </p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What's included?</summary>
       <div class="answer">
         <p>
           Your ticket includes a <strong>full-course dinner, dessert bar,
@@ -515,54 +461,46 @@
     </details>
 
     <details>
-      <summary>What time is prom? Can parents come in for photos?</summary>
+      <summary>Can parents come in for pictures?</summary>
       <div class="answer">
         <p>
-          Doors open at <strong>5:15 PM</strong> for check-in and photos.
-          Prom is <strong>6:00–10:00 PM</strong>.
-        </p>
-
-        <p>
-          Parents are welcome inside during check-in and photos but must
-          leave by 6:00 PM unless they are registered volunteers or chaperones.
+          Yes! Parents are welcome during the <strong>5:15–6:00 PM</strong>
+          check-in and photo period. Unless registered as a volunteer or
+          chaperone, adults will need to leave by 6:00 PM.
         </p>
       </div>
     </details>
 
     <details>
-      <summary>Can I request a song?</summary>
+      <summary>Can students request songs?</summary>
       <div class="answer">
         <p>
-          Yes! Submit song requests on the event waiver or email
-          <span class="email">stx.homeschoolprom@gmail.com</span>.
-          Requests remain subject to event and DJ approval.
+          Yes! Requests can be submitted through the event waiver or by email
+          and are subject to event and DJ approval.
         </p>
       </div>
     </details>
   </section>
 
 
-  <!-- FOOD -->
-  <section class="category">
+  <!-- DINNER -->
+
+  <section class="faq-section">
     <h2>Dinner & Dietary Needs</h2>
 
     <details>
       <summary>What about allergies or dietary restrictions?</summary>
       <div class="answer">
         <p>
-          We'll collect food allergy and dietary information during
-          registration and on the required waiver.
-        </p>
-
-        <p>
           Dinner will be <strong>gluten-free or include a gluten-free option</strong>,
-          and we make every effort for food and refreshments to be free from
-          artificial dyes.
+          and we'll make every reasonable effort for food and refreshments
+          to be free from artificial dyes.
         </p>
 
         <p>
-          We cannot guarantee an allergen-free environment, so please tell
-          us about any dietary needs.
+          Please include allergies and dietary needs during registration and
+          on the waiver. We'll make reasonable efforts to accommodate them,
+          but <strong>cannot guarantee an allergen-free environment.</strong>
         </p>
       </div>
     </details>
@@ -570,53 +508,42 @@
 
 
   <!-- WAIVERS -->
-  <section class="category">
+
+  <section class="faq-section">
     <h2>Waivers, Check-In & Leaving</h2>
 
     <details>
-      <summary>Is a waiver required?</summary>
+      <summary>Does everyone need a waiver?</summary>
       <div class="answer">
         <p>
-          Yes. <strong>Every attending student must have a completed event
-          waiver to enter.</strong>
+          Yes. <strong>Every student must have a completed event waiver.
+          No waiver means no entry.</strong>
         </p>
 
         <p>
-          Students will also sign in when they arrive, including whether
-          they drove themselves or arrived with someone else.
+          Students will also sign in upon arrival, including whether they
+          drove themselves or arrived with someone else.
         </p>
       </div>
     </details>
 
     <details>
-      <summary>Can students leave during prom?</summary>
+      <summary>Can students leave and come back?</summary>
       <div class="answer">
         <p>
-          Students may not leave the building or go outside without
-          <strong>chaperone approval and supervision</strong>.
+          Students may not leave the building or go outside during prom
+          without chaperone approval or supervision.
         </p>
 
         <p>
-          A student leaving early will be considered checked out and is
-          no longer under event supervision. South Texas Homeschool Prom
-          &amp; Formal is not responsible for their transportation or whom
-          they leave with after checkout.
+          Leaving early means being <strong>checked out of the event</strong>.
+          Once checked out, the student is no longer under event supervision.
+          Unexpected departures may result in a parent, guardian, or emergency
+          contact being called.
         </p>
 
         <p>
-          If an unexpected early departure occurs, a parent/guardian or
-          emergency contact may be contacted.
-        </p>
-      </div>
-    </details>
-
-    <details>
-      <summary>Can students come back after leaving?</summary>
-      <div class="answer">
-        <p>
-          Re-entry is not automatic. A student who has left or checked out
-          may re-enter only with <strong>approval from a chaperone or event
-          organizer</strong>.
+          Re-entry is not automatic and requires organizer or chaperone approval.
         </p>
       </div>
     </details>
@@ -624,124 +551,120 @@
 
 
   <!-- SAFETY -->
-  <section class="category">
+
+  <section class="faq-section">
     <h2>Safety & Conduct</h2>
 
     <details>
-      <summary>How is the event supervised?</summary>
+      <summary>Will there be chaperones?</summary>
       <div class="answer">
         <p>
-          The event is supervised by adult chaperones.
-          <strong>Volunteers and chaperones working with or supervising
-          students are background checked.</strong>
+          Yes. Adult chaperones will be present throughout prom, and volunteers
+          or chaperones working with or supervising students will be
+          <strong>background checked</strong>.
         </p>
       </div>
     </details>
 
     <details>
-      <summary>What behavior is expected?</summary>
+      <summary>What are the conduct rules?</summary>
       <div class="answer">
         <p>
-          Respect yourself, fellow students, chaperones, volunteers,
-          and event organizers.
+          Treat other students, chaperones, volunteers, venue staff, and
+          organizers with respect.
         </p>
 
         <p>
           Vulgar, threatening, discriminatory, sexually inappropriate,
           disruptive, or otherwise inappropriate behavior is not permitted.
-          Students must follow event rules and reasonable instructions from
-          chaperones and organizers.
+        </p>
+
+        <p>
+          <strong>Weapons, alcohol, illegal drugs, tobacco, vaping products
+          or devices, drug paraphernalia, and other safety-threatening items
+          are prohibited.</strong>
         </p>
       </div>
     </details>
 
     <details>
-      <summary>What items are prohibited?</summary>
+      <summary>What happens if someone breaks the rules?</summary>
       <div class="answer">
         <p>
-          Weapons, alcohol, illegal drugs, tobacco products, vaping products,
-          related paraphernalia, and items that create a safety concern or
-          substantially disrupt the event are prohibited.
-        </p>
-      </div>
-    </details>
-
-    <details>
-      <summary>What is the three-strike policy?</summary>
-      <div class="answer">
-        <p>
-          Ordinary behavioral or rule violations will generally follow a
-          <strong>three-strike policy</strong>.
+          We generally use a <strong>three-strike policy</strong> for ordinary
+          rule violations, giving students an opportunity to correct their behavior.
         </p>
 
         <p>
-          Serious violations, including weapons or prohibited items, violence,
-          threats, harassment, dangerous behavior, or other serious misconduct,
-          may result in <strong>immediate removal without three warnings</strong>.
+          Serious misconduct, including prohibited items, violence, threats,
+          harassment, or dangerous behavior, may result in
+          <strong>immediate removal without three warnings</strong>.
+          A student removed from prom may not return.
         </p>
-
-        <p>Students removed from the event may not return that evening.</p>
       </div>
     </details>
   </section>
 
 
   <!-- PROM COURT -->
-  <section class="category">
+
+  <section class="faq-section">
     <h2>Prom Court</h2>
 
     <details>
-      <summary>Who can participate in Prom Court?</summary>
+      <summary>Will there be a Prom King and Queen?</summary>
       <div class="answer">
         <p>
-          Juniors and seniors attending the 2027 prom may enter themselves
-          or be nominated by a friend.
+          Yes! <strong>You Should See Me in a Crown</strong> is our 2027 Prom Court.
         </p>
 
         <p>
-          Candidates will submit a photo, short bio, a little about themselves,
-          and why they would like to be your 2027 Prom King or Prom Queen.
+          Juniors and seniors attending prom may enter for
+          <strong>Prom King or Prom Queen</strong>, either by nominating
+          themselves or being nominated by a friend.
         </p>
 
         <p>
-          Full details and candidates will be available on our
-          <strong>Prom Court page</strong>.
+          Candidates will submit a photo, short bio, and a little about
+          themselves and why they'd like the crown. They'll be featured online
+          before prom.
         </p>
-      </div>
-    </details>
 
-    <details>
-      <summary>How does voting work?</summary>
-      <div class="answer">
         <p>
-          Voting takes place <strong>in person at prom and is open only to
-          students attending the event</strong>. There is no online voting.
+          <strong>Voting happens at prom, not online, and only attending
+          students may vote.</strong>
+        </p>
+
+        <p>
+          Full details will be available on our <strong>Prom Court page</strong>.
         </p>
       </div>
     </details>
   </section>
 
 
-  <!-- ACCESSIBILITY -->
-  <section class="category">
+  <!-- ACCESSIBILITY & CONTACT -->
+
+  <section class="faq-section">
     <h2>Accessibility, Volunteering & Contact</h2>
 
     <details>
-      <summary>Is the venue handicap accessible?</summary>
+      <summary>Is the venue accessible?</summary>
       <div class="answer">
         <p>
-          Yes. If a specific accommodation is needed, please contact us
-          before the event so we can work with you.
+          Yes. The venue is handicap accessible. For specific accommodations,
+          please contact us ahead of time so we can make arrangements whenever possible.
         </p>
       </div>
     </details>
 
     <details>
-      <summary>How can I volunteer?</summary>
+      <summary>Can parents volunteer?</summary>
       <div class="answer">
         <p>
-          Email <span class="email">stx.homeschoolprom@gmail.com</span>
-          for volunteer information.
+          Yes! Adult volunteers and chaperones are welcome. Anyone working with
+          or supervising students will be required to complete our volunteer
+          requirements, including a background check.
         </p>
       </div>
     </details>
@@ -750,10 +673,11 @@
       <summary>Still have a question?</summary>
       <div class="answer">
         <p>
-          Email us at
-          <span class="email">stx.homeschoolprom@gmail.com</span>.
-          We're happy to help.
+          Please ask! We'd much rather answer a question than have your family
+          wondering.
         </p>
+
+        <p><strong>stx.homeschoolprom@gmail.com</strong></p>
       </div>
     </details>
   </section>
@@ -761,10 +685,8 @@
 </main>
 
 <footer>
-  South Texas Homeschool Prom &amp; Formal<br>
-  <a href="mailto:stx.homeschoolprom@gmail.com">
-    stx.homeschoolprom@gmail.com
-  </a>
+  South Texas Homeschool Prom & Formal<br>
+  <a href="mailto:stx.homeschoolprom@gmail.com">stx.homeschoolprom@gmail.com</a>
 </footer>
 
 </body>
